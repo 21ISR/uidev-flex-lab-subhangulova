@@ -8,6 +8,8 @@ body {
 }
 .container {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .header,
 .footer {
@@ -20,7 +22,8 @@ body {
     background: #444;
     color: white;
     padding: 15px;
-
+    display: flex;
+    justify-content: center;
     gap: 15px;
 }
 .nav a {
@@ -31,6 +34,8 @@ body {
 .main {
     padding: 20px;
     gap: 20px;
+    display: flex;
+    flex:1
 }
 .sidebar {
     background: #f4f4f4;
@@ -41,21 +46,30 @@ body {
     background: #ddd;
     padding: 20px;
     gap: 20px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
 }
 .section {
     background: white;
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex:1;
 }
 .card-container {
     gap: 15px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .card {
     background: white;
     padding: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    flex-basis: calc((100% - 30px)/3);
 }
 .footer {
     margin-top: 20px;
